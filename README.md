@@ -9,38 +9,13 @@
 
 ## 1. Project Planning & Requirements Gathering
 
-Define specific climate-related problems in Nepal to address (e.g., glacial melt, flooding, agricultural impacts)
-Research existing climate monitoring infrastructure in Nepal
-Identify key stakeholders (government agencies, NGOs, research institutions)
-Determine required resources (computing, storage, expertise)
-
+Analysis of climate change status of Nepal and developing prediction.
 
 ## 2. Data Collection & Acquisition
 
 Weather & Climate Data:
 
-- Historical temperature, precipitation, and extreme weather events from Nepal Department of Hydrology and Meteorology
-- Satellite imagery from NASA Earth Data for glacial monitoring
-- Weather station data from World Meteorological Organization
-- Climate reanalysis data from ERA5 dataset
-
-
-Environmental Data:
-
-- Land use/land cover changes from Landsat/Sentinel imagery
-- River discharge data from hydrological stations
-- Glacial lake formation and evolution data
-- Forest cover and deforestation rates from Global Forest Watch
-
-
-Socioeconomic Data:
-
-- Agricultural yield statistics from Nepal Ministry of Agriculture
-- Population distribution data in climate-vulnerable areas
-- Infrastructure mapping in flood-prone regions
-- Economic impact data from previous climate disasters
-
-
+- Historical temperature, precipitation, and extreme weather events data
 
 ## 3. Data Preprocessing & Storage
 
@@ -48,8 +23,7 @@ Socioeconomic Data:
 - Handle missing values through appropriate imputation techniques
 - Normalize data from different sources and convert to consistent units
 - Implement temporal alignment for time-series data
-- Create georeferenced dataset structure for spatial analysis
-- Design CSV schema for storing processed data
+-- Design CSV schema for storing processed data
 - Document data lineage and preprocessing steps
 - Implement data validation checks for consistency
 
@@ -94,16 +68,6 @@ Socioeconomic Data:
 
 
 
-## 7. Natural Language Processing Components
-
-- Collect climate-related news articles, reports, and social media data
-- Develop sentiment analysis model to track public perception of climate change
-- Implement named entity recognition to extract location and event information
-- Create topic modeling system to identify emerging climate concerns
-- Build text summarization tool for climate reports
-- Develop multilingual processing capability for Nepali language sources
-- Integrate NLP insights with quantitative climate data
-- Design information extraction pipeline for unstructured text data
 
 ## 8. Model Evaluation & Validation
 
@@ -138,24 +102,6 @@ Socioeconomic Data:
 - Create system monitoring dashboard
 - Implement backup and disaster recovery procedures
 
-## 11. Documentation & Knowledge Transfer
-
-- Create comprehensive API documentation
-- Develop user guides for different stakeholder groups
-- Write technical documentation for system maintenance
-- Prepare training materials for new users
-- Document code with appropriate comments and explanations
-- Create project wiki with FAQs and troubleshooting guides
-- Record tutorial videos for common tasks
-- Establish documentation update procedures
-
-## 12. Future Improvements & Extensions
-
-- Outline potential integration with IoT climate sensors
-- Suggest approaches for higher-resolution modeling
-- Identify opportunities for citizen science data collection
-- Propose advanced deep learning model implementations
-- Recommend additional data sources for enhanced analysis
-- Suggest mobile application development for broader access
-- Outline potential for integration with early warning systems
-- Propose international collaboration opportunities
+**This is developed for education purpose of castpone project of Omdena NIC Nepal. It is not recommended to use in realistic world**
+streamlit app link - https://omdena-nic-nepal-capstone-project-prgiri422-app-xzlzyw.streamlit.app/
+repository link - https://github.com/Omdena-NIC-Nepal/capstone-project-prgiri422.git
