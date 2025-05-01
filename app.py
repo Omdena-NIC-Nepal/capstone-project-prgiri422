@@ -6,6 +6,14 @@ from datetime import datetime
 import plotly.express as px
 from config import USE_GOOGLE_DRIVE
 from utils import load_file, load_model, save_model
+import streamlit as st
+import os
+
+try:
+    import gdown
+    st.success("gdown imported successfully!")
+except ImportError:
+    st.error("gdown not found!")
 
 # Initialize session state
 if 'df' not in st.session_state:

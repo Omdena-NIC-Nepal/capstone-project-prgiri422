@@ -37,7 +37,7 @@ beautifulsoup4
 newspaper3k
 textblob
 textacy
-
+gdown
 requests
 aiohttp
 tqdm
@@ -48,5 +48,3 @@ boto3
 flask
 pytest
 
-prophet
-statsmodels
