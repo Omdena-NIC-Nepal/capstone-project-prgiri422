@@ -1,13 +1,4 @@
-import streamlit as st
-
-# Set page config
-st.set_page_config(
-    page_title="Nepal Climate Analysis",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
-# 🧠 Import other libraries AFTER setting page config
+# ✅ ALL IMPORTS FIRST - no Streamlit commands here
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -15,16 +6,27 @@ import plotly.express as px
 from datetime import datetime
 import os
 
-# ✅ Only import config/utils IF they do NOT use st.* at import time
+# ✅ Now set page config IMMEDIATELY after imports
+import streamlit as st
+st.set_page_config(
+    page_title="Nepal Climate Analysis",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# ✅ Only AFTER set_page_config can you import other modules
+# Make sure these don't execute any Streamlit commands at import time
 from config import USE_GOOGLE_DRIVE
 from utils import load_file, load_model, save_model
 
-# ✅ gdown check (do this only after st.set_page_config)
+# ✅ Now safe to use other Streamlit commands
 try:
     import gdown
     st.success("gdown imported successfully!")
 except ImportError:
     st.error("gdown not found!")
+
+# Rest of your existing code continues unchanged...
 
 
 # Initialize session state
