@@ -1,21 +1,25 @@
 import streamlit as st
 
-# ✅ Set page config at the very top before any other st.* command
+# ✅ MUST BE THE FIRST Streamlit command
 st.set_page_config(
-    page_title="Extreme Weather Prediction",
+    page_title="Nepal Climate Analysis",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
+# 🧠 Import other libraries AFTER setting page config
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from datetime import datetime
 import plotly.express as px
-from config import USE_GOOGLE_DRIVE
-from utils import load_file, load_model, save_model
+from datetime import datetime
 import os
 
+# ✅ Only import config/utils IF they do NOT use st.* at import time
+from config import USE_GOOGLE_DRIVE
+from utils import load_file, load_model, save_model
+
+# ✅ gdown check (do this only after st.set_page_config)
 try:
     import gdown
     st.success("gdown imported successfully!")
