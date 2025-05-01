@@ -1,4 +1,12 @@
 import streamlit as st
+
+# ✅ Set page config at the very top before any other st.* command
+st.set_page_config(
+    page_title="Extreme Weather Prediction",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -6,7 +14,6 @@ from datetime import datetime
 import plotly.express as px
 from config import USE_GOOGLE_DRIVE
 from utils import load_file, load_model, save_model
-import streamlit as st
 import os
 
 try:
@@ -14,6 +21,7 @@ try:
     st.success("gdown imported successfully!")
 except ImportError:
     st.error("gdown not found!")
+
 
 # Initialize session state
 if 'df' not in st.session_state:
