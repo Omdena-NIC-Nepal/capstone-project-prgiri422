@@ -343,22 +343,22 @@ elif page == "About":
     st.title("📘 About This Project")
     st.markdown("""
     ### Climate Change Impact Assessment for Nepal
-        # 1. Project Planning & Requirements Gathering
-        # 2. Data Collection & Acquisition
-        # 3. Data Preprocessing & Storage
-        # 4. Exploratory Data Analysis (EDA)
-        # 5. Feature Engineering
-        # 6. Machine Learning Model Development
-        # Classification Models:
-        # Regression Models:
-        # 8. Model Evaluation & Validation
-        # 9. Dashboard Development with Streamlit
-        # 10. Deployment & Integration
-        **This is developed for education purpose of castpone project of Omdena NIC Nepal. It is not recommended to use in realistic world**
-        streamlit app link - https://omdena-nic-nepal-capstone-project-prgiri422-app-xzlzyw.streamlit.app/
+        1. Project Planning & Requirements Gathering
+        2. Data Collection & Acquisition
+        3. Data Preprocessing & Storage
+        4. Exploratory Data Analysis (EDA)
+        5. Feature Engineering
+        6. Machine Learning Model Development
+        7. Classification Models:
+        8. Regression Models:
+        9. Model Evaluation & Validation
+        10. Dashboard Development with Streamlit
+        11. Deployment & Integration
+     **This is developed for education purpose of castpone project of Omdena NIC Nepal. It is not recommended to use in realistic world**
+     streamlit app link - https://omdena-nic-nepal-capstone-project-prgiri422-app-xzlzyw.streamlit.app/
         repository link - https://github.com/Omdena-NIC-Nepal/capstone-project-prgiri422.git
-        **Developed by:** Prabin Giri  
-        **Version:** 1.0 (2025)
+    **Developed by:** Prabin Giri  
+    **Version:** 1.0 (2025)
     """)
 
 st.markdown("---")
