@@ -1,6 +1,6 @@
 import streamlit as st
 
-# ✅ MUST BE THE FIRST Streamlit command
+# Set page config
 st.set_page_config(
     page_title="Nepal Climate Analysis",
     layout="wide",
@@ -34,13 +34,6 @@ if 'featured_df' not in st.session_state:
     st.session_state.featured_df = None
 if 'data_loaded' not in st.session_state:
     st.session_state.data_loaded = False
-
-# Set page config
-st.set_page_config(
-    page_title="Nepal Climate Analysis",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # Custom CSS for sidebar
 st.markdown("""
